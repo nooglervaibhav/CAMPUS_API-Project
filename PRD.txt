@@ -1,0 +1,113 @@
+# Product Requirements Document (PRD)
+
+## Title
+**Campus Event Reminder App**
+
+---
+
+## Overview
+The Campus Event Reminder App is designed to help college students easily stay updated about upcoming campus events. The application provides timely reminders, event details, and allows users to filter and organize events by type (such as workshop, fest, or seminar). The app focuses on a simple, clean, and mobile-friendly user interface for everyday use.
+
+---
+
+## Goals & Objectives
+- Notify students about upcoming campus events.
+- Enable filtering of events by categories (e.g., Tech, Talk, Cultural, Seminar).
+- Allow students to set personal reminders for events.
+- Deliver a simple, clean, and mobile-first user experience.
+
+---
+
+## Target User
+- College students aged 18-25.
+- Active participants in campus activities.
+- Users seeking to stay informed and organized regarding campus events.
+
+---
+
+## Features
+
+| Feature          | Description                                               | Priority |
+|------------------|----------------------------------------------------------|----------|
+| View Events      | Display a list of upcoming events with date/time         | High     |
+| Filter by Type   | Filter events (e.g., Tech, Talk, Cultural, Seminar)      | Medium   |
+| Set Reminder     | Add event reminders using email                          | High     |
+| Event Details    | Show event description, organizer, location              | High     |
+| Add to Calendar  | Optionally add events to phone calendar                  | Low      |
+
+---
+
+## Functional Requirements
+
+### 1. View Events
+- Data: Title, Description, Date & Time, Type, Location
+- Store events in SQLite database
+- List view of all upcoming events
+
+### 2. Filter System
+- Drop-down or button-based filters for event type
+- Optional search box for events
+
+### 3. Reminder System
+- Users can enable/disable reminders for events
+- Reminders sent via email or in-app/browser notification
+- Simple alert or local notification
+
+### 4. Event Details
+- Each event should have a detail page showing:
+  - Event title
+  - Description
+  - Organizer
+  - Location
+  - Date & time
+
+### 5. Add to Calendar (Optional)
+- Provide a button to add event to user's phone or Google calendar
+
+---
+
+## UI/UX Requirements
+- Clean, minimal, and mobile-first design using Tailwind CSS
+- Three main screens:
+  1. Home (Event List)
+  2. Event Details
+  3. Reminder Settings
+
+---
+
+## Tech Stack
+- **Frontend:** HTML, Tailwind CSS
+- **Backend:** Django
+- **Database:** SQLite (for quick deployment and easy setup)
+- **Notification:** Browser-based or in-app alerts, email reminders
+
+---
+
+## Timeline
+
+| Task                    | Deadline         |
+|-------------------------|-----------------|
+| Requirement Finalization| Day 1           |
+| UI Wireframes           | Day 2           |
+| Build Event List View   | Day 3           |
+| Add Filter & Reminder   | Day 4           |
+| Testing                 | Day 5           |
+| Final Touches & Report  | Day 6           |
+
+---
+
+## Success Criteria
+- App loads and displays at least 5 sample events
+- User can set at least one reminder
+- Responsive design for mobile devices
+- No major bugs during testing
+
+---
+
+## Deliverables
+- Working deployed app (Vercel/PythonAnywhere or similar)
+- Source code hosted on GitHub
+- Short demo video (2-3 minutes)
+- Final report (PDF with screenshots and feature list)
+
+---
